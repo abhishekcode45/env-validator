@@ -1,0 +1,42 @@
+{
+  "name": "env-validator",
+  "version": "1.0.0",
+  "description": "Environment variable validation and parsing for Node.js and TypeScript",
+  "main": "index.js",
+  "module": "index.mjs",
+  "types": "index.d.ts",
+  "bin": {
+    "env-validator": "./bin/env-validator.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "index.js",
+    "index.mjs",
+    "index.d.ts",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "env",
+    "environment",
+    "validator",
+    "dotenv",
+    "schema",
+    "cli"
+  ],
+  "license": "MIT"
+}
